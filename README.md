@@ -1,5 +1,3 @@
-# SQL_command
-记录SQL中常用的命令
 # SLQ常用命令：
 
 #Ctrl+F 快速查找
@@ -51,12 +49,17 @@ ENCRYPT('数据');   #字段类型最好是CHAR BINARY
 ALTER TABLE 表名 MODIFY COLUMN 类型;
 ```
 
-##### ORDER BY排序
+##### ORDER BY 排序
+
+```sql
+ORDER BY 列名 [DESC|ASC];         #默认按该列的字母或者数字升序排列;
+										#DESC:逆序、ASC：顺序
+ORDER BY 列名1,列名2;				#可多列排序，第一列顺序相同时按第二列排序
+```
+
+##### UPDATE 修改
 
 ```
-ORDER BY 列名 [DESC|ASC];         #默认按该列的字母或者数字升序排列;
-										#DESC:逆字母顺序、ASC
-ORDER BY 列名1,列名2;
-
+UPDATE 表名 SET 列名 = 新值 WHERE 列名 = 某值
 ```
 
